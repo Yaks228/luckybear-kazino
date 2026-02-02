@@ -6,12 +6,65 @@
     <meta name="description" content="Lucky Bear Casino — официальный сайт онлайн-казино с доступом через Telegram. Регистрация в Lucky Bear, рабочее зеркало, быстрые выплаты и поддержка 24/7.">
     <meta name="keywords" content="Lucky Bear, Lucky Bear Casino, лаки бир, лаки бир казино, lucky bear регистрация, lucky bear telegram, lucky bear зеркало, официальный сайт lucky bear">
     <title>Lucky Bear Casino — официальный сайт, регистрация и зеркало</title>
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://luckybear-kazino.vercel.app/">
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preloads for Speed -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="Link.json" as="fetch" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Critical CSS (Inline for instant rendering) -->
+    <style>
+        :root {
+            --bg-primary: #0a0e17; --bg-secondary: #0f1420; --bg-tertiary: #141a28; --bg-card: #171e2e; --bg-card-hover: #1c2438; --accent-primary: #4361ee; --accent-secondary: #3b5bdb; --accent-light: #5a7fff; --accent-glow: rgba(67, 97, 238, 0.3); --text-primary: #ffffff; --text-secondary: #a0aec0; --text-muted: #6b7688; --color-gold: #ffd700; --font-family: 'Montserrat', 'Inter', system-ui, -apple-system, sans-serif; --font-weight-regular: 400; --font-weight-medium: 500; --font-weight-bold: 700; --max-width: 1280px; --spacing-sm: 8px; --spacing-md: 16px; --spacing-lg: 32px; --spacing-xl: 64px; --spacing-xxl: 96px; --radius-sm: 8px; --radius-md: 12px; --radius-lg: 16px; --radius-xl: 24px; --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); --shadow-deep: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); --glow-primary: 0 0 20px var(--accent-glow); --transition-smooth: all 0.3s ease;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body { font-family: var(--font-family); background-color: var(--bg-primary); color: var(--text-primary); line-height: 1.6; overflow-x: hidden; }
+        a { text-decoration: none; color: inherit; transition: var(--transition-smooth); }
+        ul { list-style: none; }
+        .container { width: 100%; max-width: var(--max-width); margin: 0 auto; padding: 0 var(--spacing-md); }
+        .text-gradient { background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        h1 { font-weight: var(--font-weight-bold); line-height: 1.2; margin-bottom: var(--spacing-md); font-size: clamp(2.5rem, 5vw, 4rem); }
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 24px; border-radius: var(--radius-md); font-weight: var(--font-weight-bold); cursor: pointer; transition: var(--transition-smooth); font-size: 1rem; border: none; }
+        .btn-primary { background-color: var(--accent-primary); color: var(--text-primary); box-shadow: var(--glow-primary); }
+        .btn-secondary { background-color: transparent; border: 2px solid var(--accent-primary); color: var(--accent-primary); }
+        .header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background-color: rgba(10, 14, 23, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); padding: var(--spacing-md) 0; }
+        .header-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: var(--font-weight-bold); color: var(--text-primary); text-transform: uppercase; letter-spacing: 1px; }
+        .hero { padding-top: calc(80px + var(--spacing-xxl)); padding-bottom: var(--spacing-xxl); position: relative; text-align: center; }
+        .hero-content { max-width: 800px; margin: 0 auto; }
+        .hero-subtitle { font-size: 1.25rem; margin-bottom: var(--spacing-xl); color: var(--text-secondary); }
+        .hero-buttons { display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap; }
+        .vpn-block { margin-top: var(--spacing-lg); display: flex; flex-direction: column; align-items: center; gap: var(--spacing-sm); animation: fadeIn 1s ease-out 0.5s both; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        @media (max-width: 768px) { .header-actions, .nav-menu { display: none; } .header-container { justify-content: center; } .btn { width: 100%; } .hero-buttons { flex-direction: column; } }
+    </style>
+
+    <!-- Async loading for main CSS -->
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
     
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://luckybear-kazino.vercel.app/">
+    <meta property="og:title" content="Lucky Bear Casino — Официальный сайт и зеркало">
+    <meta property="og:description" content="Регистрация в Lucky Bear Casino через Telegram. Бонус 500% на первый депозит. Рабочее зеркало лаки бир.">
+    <meta property="og:image" content="https://luckybear-kazino.vercel.app/favicon/apple-touch-icon.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://luckybear-kazino.vercel.app/">
+    <meta property="twitter:title" content="Lucky Bear Casino — Официальный сайт и зеркало">
+    <meta property="twitter:description" content="Регистрация в Lucky Bear Casino через Telegram. Бонус 500% на первый депозит. Рабочее зеркало лаки бир.">
+    <meta property="twitter:image" content="https://luckybear-kazino.vercel.app/favicon/apple-touch-icon.png">
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -19,45 +72,91 @@
     <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="shortcut icon" href="favicon/favicon.ico">
     
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-   (function(m,e,t,r,i,k,a){
-       m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-       m[i].l=1*new Date();
-       k=e.createElement(t),a=e.getElementsByTagName(t)[0];
-       k.async=1;k.src=r;a.parentNode.insertBefore(k,a);
-   })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <!-- JSON-LD Microdata -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Lucky Bear Casino Bot",
+      "operatingSystem": "Telegram",
+      "applicationCategory": "GameApplication",
+      "description": "Онлайн-казино в Telegram с моментальными выплатами и бонусом 500%.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "RUB"
+      }
+    }
+    </script>
 
-   ym(106507041, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
-</script>
-<noscript>
-   <div><img src="https://mc.yandex.ru/watch/106507041" style="position:absolute; left:-9999px;" alt="" /></div>
-</noscript>
-<!-- /Yandex.Metrika counter -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Как зарегистрироваться в Lucky Bear?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Регистрация в Lucky Bear Casino проходит мгновенно через Telegram бота или официальное зеркало. Достаточно нажать кнопку Старт в боте."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Где найти рабочее зеркало Лаки Бир?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Актуальное зеркало всегда доступно на этой странице или в официальном Telegram канале проекта. Мы обновляем ссылки ежедневно."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Какой бонус дает Lucky Bear Casino?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Новые игроки получают приветственный бонус до 500% на первый депозит, а также бездепозитные бонусы за подписку на социальные сети."
+        }
+      }]
+    }
+    </script>
 
-
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+       (function(m,e,t,r,i,k,a){
+           m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+           m[i].l=1*new Date();
+           k=e.createElement(t),a=e.getElementsByTagName(t)[0];
+           k.async=1;k.src=r;a.parentNode.insertBefore(k,a);
+       })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+       ym(106507041, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+       });
+    </script>
+    <noscript>
+       <div><img src="https://mc.yandex.ru/watch/106507041" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 <body>
 
     <header class="header">
         <div class="container header-container">
-            <a href="#" class="logo">Lucky Bear</a>
+            <a href="https://lbgame777.xyz/4ouDcq" class="logo">Lucky Bear</a>
             <nav>
                 <ul class="nav-menu">
                     <li><a href="#about" class="nav-link">О казино</a></li>
                     <li><a href="#mirror" class="nav-link">Зеркало</a></li>
-                    <li><a href="#" class="nav-link">Регистрация</a></li>
+                    <li><a href="https://lbgame777.xyz/4ouDcq" class="nav-link">Регистрация</a></li>
                     <li><a href="#advantages-detail" class="nav-link">Бонусы</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                <a href="#" class="btn btn-sm btn-secondary">Вход</a>
-                <a href="#" class="btn btn-sm btn-primary">Регистрация</a>
+                <a href="https://lbgame777.xyz/4ouDcq" class="btn btn-sm btn-secondary">Вход</a>
+                <a href="https://lbgame777.xyz/4ouDcq" class="btn btn-sm btn-primary">Регистрация</a>
             </div>
         </div>
     </header>
@@ -70,12 +169,12 @@
                     Откройте для себя онлайн-казино <strong>Lucky Bear</strong>. Мгновенная <strong>регистрация</strong>, удобный доступ к играм через <strong>Telegram</strong> и гарантия стабильных выплат.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary">Открыть в Telegram</a>
-                    <a href="#" class="btn btn-secondary">Перейти на зеркало</a>
+                    <a href="https://t.me/+OCPgF7XQ7yk3YmZi" class="btn btn-primary">Открыть в Telegram</a>
+                    <a href="https://lbgame777.xyz/4ouDcq" class="btn btn-secondary">Перейти на зеркало</a>
                 </div>
 
                 <div class="vpn-block">
-                    <a href="#" class="btn btn-secondary" style="border-color: rgba(255,255,255,0.15); color: var(--text-secondary); font-size: 0.95rem; padding: 10px 24px;">
+                    <a href="https://t.me/VPN_OpenWorld_bot?start=NTcyNTIyNTQwMA" class="btn btn-secondary" style="border-color: rgba(255,255,255,0.15); color: var(--text-secondary); font-size: 0.95rem; padding: 10px 24px;">
                         Скачать VPN
                     </a>
                     <p class="vpn-note">* Для игры может потребоваться VPN</p>
@@ -91,7 +190,7 @@
                     <p>
                         Используйте зеркало Lucky Bear для гарантированного доступа к официальному сайту казино в любой ситуации. Весь функционал, ваш профиль и любимые игры остаются доступными без ограничений.
                     </p>
-                    <a href="#" class="btn btn-primary">Открыть зеркало</a>
+                    <a href="https://lbgame777.xyz/4ouDcq" class="btn btn-primary">Открыть зеркало</a>
                 </div>
             </div>
         </section>
@@ -153,7 +252,7 @@
                     Мгновенная <strong>регистрация</strong> и полная синхронизация с вашим профилем.
                 </p>
                 <div style="margin-top: 32px;">
-                    <a href="#" class="btn btn-primary">Запустить Бота</a>
+                    <a href="https://t.me/+OCPgF7XQ7yk3YmZi" class="btn btn-primary">Запустить Бота</a>
                 </div>
             </div>
         </section>
@@ -196,7 +295,7 @@
 
                 <div class="bonus-cta">
                     <p class="bonus-text">Забирай от 50р на баланс просто подписавшись на телеграм</p>
-                    <a href="#" class="btn btn-primary">Перейти в Телеграм</a>
+                    <a href="https://t.me/+OCPgF7XQ7yk3YmZi" class="btn btn-primary">Перейти в Телеграм</a>
                 </div>
             </div>
         </section>
@@ -261,6 +360,28 @@
             </div>
         </section>
 
+        <!-- SEO Content Block -->
+        <section class="section seo-text-block" style="background: rgba(0,0,0,0.2); border-top: 1px solid rgba(255,255,255,0.05);">
+            <div class="container">
+                <h2 class="text-gradient">Lucky Bear Casino — Ваш путь к азартным победам</h2>
+                <div style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);">
+                    <p>Добро пожаловать на информационный ресурс <strong>Lucky Bear Casino</strong>. Если вы ищете надежное место для игры, то <strong>Лаки Бир</strong> — идеальный выбор. Мы объединили удобство мессенджера <strong>Telegram</strong> и мощь современного онлайн-казино. Наш проект ориентирован на игроков, которые ценят анонимность, скорость и честность.</p>
+                    
+                    <p><strong>Регистрация в Lucky Bear</strong> происходит практически мгновенно. Вам не нужно заполнять длинные анкеты — достаточно иметь аккаунт в Телеграм. Это делает вход в игру максимально простым. Для тех, кто предпочитает классический браузерный интерфейс, мы всегда поддерживаем актуальное <strong>зеркало Lucky Bear</strong>, которое позволяет обходить любые сетевые ограничения.</p>
+                    
+                    <h3>Основные преимущества Лаки Бир Казино:</h3>
+                    <ul>
+                        <li><strong>Лицензионные слоты:</strong> Мы работаем только с проверенными провайдерами игрового софта.</li>
+                        <li><strong>Бонусная программа:</strong> Получите до 500% на свой первый депозит и участвуйте в регулярных розыгрышах.</li>
+                        <li><strong>Поддержка 24/7:</strong> Наша команда всегда готова помочь вам в Telegram чате.</li>
+                        <li><strong>Криптовалюты:</strong> Пополняйте счет и выводите средства в USDT, BTC и других монетах.</li>
+                    </ul>
+                    
+                    <p>Играя в <strong>Lucky Bear Telegram</strong>, вы получаете доступ к эксклюзивным турнирам и акциям, доступным только пользователям бота. Начните свое приключение с Лаки Бир сегодня и почувствуйте настоящий азарт!</p>
+                </div>
+            </div>
+        </section>
+
         <!-- New Section: CTA -->
         <section class="section" id="cta-final">
             <div class="container">
@@ -270,7 +391,7 @@
                         Не упустите шанс сорвать куш! <strong>Lucky Bear (Лаки Бир)</strong> — это честная игра, быстрые выплаты и забота о каждом игроке.
                         Ваша удача ждет вас всего в одном клике.
                     </p>
-                    <a href="#" class="btn btn-primary" style="font-size: 1.2rem; padding: 16px 32px;">Играть Сейчас</a>
+                    <a href="https://lbgame777.xyz/4ouDcq" class="btn btn-primary" style="font-size: 1.2rem; padding: 16px 32px;">Играть Сейчас</a>
                 </div>
             </div>
         </section>
@@ -352,41 +473,49 @@
                 <strong>Lucky Bear Casino</strong> — официальный сайт онлайн-казино. Быстрая <strong>регистрация</strong>, рабочее зеркало и уникальный доступ через <strong>Telegram</strong>.
             </p>
             <div class="footer-links">
-                <a href="#" class="footer-link">Политика конфиденциальности</a>
-                <a href="#" class="footer-link">Условия использования</a>
-                <a href="#" class="footer-link">Ответственная игра</a>
+                <a href="https://lbgame777.xyz/4ouDcq" class="footer-link">Политика конфиденциальности</a>
+                <a href="https://lbgame777.xyz/4ouDcq" class="footer-link">Условия использования</a>
+                <a href="https://lbgame777.xyz/4ouDcq" class="footer-link">Ответственная игра</a>
             </div>
             <p class="text-muted" style="font-size: 0.8rem; margin-top: 20px;">
-                &copy; 2024 Lucky Bear. Все права защищены.
+                &copy; 2026 Lucky Bear. Все права защищены.
             </p>
         </div>
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        // High-priority link population
+        (function() {
+            const updateLinks = (data) => {
+                document.querySelectorAll('a').forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href && href.startsWith('#') && href.length > 1) return;
+                    if (href && !href.includes('lbgame777.xyz') && !href.includes('t.me') && href !== '#') return;
+
+                    const text = link.textContent.toLowerCase();
+                    if (text.includes('telegram') || text.includes('телеграм') || text.includes('бота') || text.includes('bot')) {
+                        link.href = data.TelegramLink;
+                    } else if (text.includes('vpn') || text.includes('впн')) {
+                        link.href = data.VPNLink;
+                    } else {
+                        link.href = data.SiteLink;
+                    }
+                });
+            };
+
             fetch('Link.json')
                 .then(response => response.json())
                 .then(data => {
-                    document.querySelectorAll('a').forEach(link => {
-                        const href = link.getAttribute('href');
-                        
-                        // Skip internal anchors (navigation)
-                        if (href && href.startsWith('#') && href.length > 1) return;
-
-                        const text = link.textContent.toLowerCase();
-
-                        if (text.includes('telegram') || text.includes('телеграм') || text.includes('бота') || text.includes('bot')) {
-                            link.href = data.TelegramLink;
-                        } else if (text.includes('vpn') || text.includes('впн')) {
-                            link.href = data.VPNLink;
-                        } else {
-                            link.href = data.SiteLink;
-                        }
-                    });
+                    if (document.readyState === 'loading') {
+                        document.addEventListener('DOMContentLoaded', () => updateLinks(data));
+                    } else {
+                        updateLinks(data);
+                    }
                 })
                 .catch(error => console.error('Error loading links:', error));
-        });
+        })();
 
+        // FAQ Toggle
         document.querySelectorAll('.faq-question').forEach(button => {
             button.addEventListener('click', () => {
                 const item = button.parentElement;
